@@ -1,11 +1,29 @@
+body {
+    /*Photo by <a href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim van 't Einde</a> on <a href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
+    background-image: url(./wim-van-t-einde-uj7eb7CgqRk-unsplash.jpg);
+    background-size: 100%;
+}
 #mainHeader {
     text-align: center;
     background-image: linear-gradient(90deg, rgb(93, 93, 255),darkblue, rgb(0, 0, 97));
     color: white;
 }
 
+#mainStyle {
+    margin-right: 10px !important;
+}
+
 #currentCity {
-    padding: 10px 30px 35px 10px;
+    margin: 5px;
+    padding-bottom: 20px;
+    height:225px;
+    opacity: 75%;
+}
+
+h2,
+#searchBar {
+    background-color: rgba(255, 255, 255, 0.644);
+    border: 2px solid rgba(0, 0, 0, 0.644);
 }
 
 #searchBar {
@@ -27,4 +45,13 @@
     padding: 7px;
     border: 1px solid black;
     margin: 5px 0px;
+}
+
+#day1, 
+#day2,
+#day3,
+#day4,
+#day5 {
+    margin: 10px 5px 0px 0px;
+    opacity: 75%;
 }
