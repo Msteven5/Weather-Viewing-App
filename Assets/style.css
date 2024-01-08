@@ -7,6 +7,7 @@ body {
     text-align: center;
     background-image: linear-gradient(90deg, rgb(93, 93, 255),darkblue, rgb(0, 0, 97));
     color: white;
+    margin-bottom: 30px;
 }
 
 #mainStyle {
