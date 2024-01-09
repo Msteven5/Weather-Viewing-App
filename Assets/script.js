@@ -1,3 +1,25 @@
+$(document).ready(function () {
+
+    let userInput = $('.input')
+
+    $('form').submit(function () {
+        let submitInput = JSON.stringify(userInput.val())
+        console.log(submitInput)
+        localStorage.setItem("citySearched", submitInput)
+
+
+    })
+})
+
+
+
+
+
+
+
+
+
+
 // create a variable to city input
 // create a variable to search button
 
@@ -15,14 +37,14 @@ function searchCity(cityName) {
     .then(function(response) { return response.json()})
     .then(function(data) {
         console.log("Temperature first day is:" + data.list[4].main.temp)
-
+        console.log(data.list[1].weather[0].icon)
         // ...... 4, 12, 20, 28, 36
 
         // Next task: Fill in the temperatures for the 5 day cards
 
-        debugger; // frozen sandbox
+        // debugger; // frozen sandbox
         console.log(data)
     })
 } // searchCity
 
-searchCity("Austin") // searchCity(cityInput.value)
+searchCity("San Antonio") // searchCity(cityInput.value) 
