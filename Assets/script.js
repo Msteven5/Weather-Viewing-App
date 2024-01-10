@@ -18,7 +18,7 @@ function loadSaves() {
     $('#searchResults').empty();
     
     for (let i = 0; i < savedOnScreen.length; i++) {
-        let buttonOnScreen = $("<button>").text(savedOnScreen[i]).addClass("rounded-3 w-75 m-1 bg-light p-2 text-dark bg-opacity-50 border-primary searchList");
+        let buttonOnScreen = $("<button>").text(savedOnScreen[i]).addClass("rounded-3 w-75 m-1 bg-light p-2 text-dark bg-opacity-75 border-primary searchList");
         $('#searchResults').append(buttonOnScreen);
     }
 }
@@ -81,7 +81,7 @@ function searchCity(currentCity) {
                     $('.modal').hide();
                 })
             }
-        });
+        })
 }
 
 $('document').ready(showLast(), loadSaves())
@@ -90,8 +90,9 @@ $('form').submit(function (event) {
     event.preventDefault();
     let userSearch = userForm.val();
     
-    searchCity(userSearch)
-    .then(loadSaves());
+    searchCity(userSearch);
+    userForm.val('');
+    loadSaves();
 })
 
 $('#searchResults').on("click", '.searchList', function () {
