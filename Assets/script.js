@@ -75,12 +75,12 @@ function searchCity(currentCity) {
 
             const savedCities = JSON.parse(localStorage.getItem('savedCities')) || [];
             const maxLength = 5;
-            if (!savedCities.includes(currentCity)) {
-                savedCities.push(currentCity);
-            } else if (savedCities.length >= maxLength) {
+            if (savedCities.length >= maxLength) {
                 savedCities.shift();
             }
-
+            if (!savedCities.includes(currentCity)) {
+                savedCities.push(currentCity);
+            }
             localStorage.setItem('savedCities', JSON.stringify(savedCities));
             loadSaves();
         })
@@ -112,7 +112,7 @@ function currentDisplay(currentCity) {
             const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
             const iconImage = document.createElement("img");
             iconImage.src = iconUrl;
-            
+
             nameOnScreen.textContent = 'Currently: ' + data.name;
             $('.currentItem-1').text(currentDate);
             $('.currentItem-2').append(iconImage);

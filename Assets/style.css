@@ -49,3 +49,8 @@ h2,
     color:black;
     text-align: center;
 }
+
+img {
+    background-color: lightblue;
+    border-radius: 15%;
+}
