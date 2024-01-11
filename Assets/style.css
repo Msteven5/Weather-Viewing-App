@@ -20,7 +20,6 @@ body {
     margin: 5px;
     padding-bottom: 20px;
     height:225px;
-    opacity: 75%;
 }
 
 h2 {
@@ -35,7 +34,10 @@ h2,
 
 #searchResults {
     list-style:none;
-    margin-left:1.5px;
+    margin-left:0px;
+    padding:0px;
+    color:black;
+    font-weight: bolder;
 }
 
 #day1, 
@@ -44,7 +46,6 @@ h2,
 #day4,
 #day5 {
     margin: 10px 5px 0px 0px;
-    opacity: 75%;
     color:black;
     text-align: center;
 }
