@@ -21,7 +21,7 @@ function loadSaves() {
 
     if (savedOnScreen) {
         for (let i = 0; i < savedOnScreen.length; i++) {
-            const buttonOnScreen = $("<button>").text(savedOnScreen[i]).addClass("rounded-3 m-1 w-100 bg-light p-2 align-items-start text-dark bg-opacity-75 border-primary searchList");
+            const buttonOnScreen = $("<button>").text(savedOnScreen[i]).addClass("rounded-3 m-1 w-100 bg-light p-2searchList");
             $('#searchResults').append(buttonOnScreen);
         }
     }
@@ -112,7 +112,7 @@ function currentDisplay(currentCity) {
             const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
             const iconImage = document.createElement("img");
             iconImage.src = iconUrl;
-            
+
             nameOnScreen.textContent = 'Currently: ' + data.name;
             $('.currentItem-1').text(currentDate);
             $('.currentItem-2').append(iconImage);
