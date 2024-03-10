@@ -1,7 +1,10 @@
 body {
     /*Photo by <a href="https://unsplash.com/@wimvanteinde?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wim van 't Einde</a> on <a href="https://unsplash.com/photos/assorted-color-umbrella-lot-under-white-clouds-at-daytime-uj7eb7CgqRk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> */
     background-image: url(./wim-van-t-einde-uj7eb7CgqRk-unsplash.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat;
     font-family: 'Abril Fatface', serif;
     color:black;
 }
