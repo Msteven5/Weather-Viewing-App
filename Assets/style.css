@@ -2,14 +2,15 @@ body {
     background-image: url(./wim-van-t-einde-uj7eb7CgqRk-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     font-family: 'Abril Fatface', serif;
-    color:black;
+    color: black;
     font-size: calc(50% + 1vw);
 }
+
 #mainHeader {
     text-align: center;
-    background-image: linear-gradient(90deg, rgb(93, 93, 255),darkblue, rgb(0, 0, 97));
+    background-image: linear-gradient(90deg, rgb(93, 93, 255), darkblue, rgb(0, 0, 97));
     color: white;
     margin-bottom: 30px;
 }
@@ -21,7 +22,7 @@ body {
 #currentCity {
     margin: 5px;
     padding-bottom: 20px;
-    height:225px;
+    height: 225px;
 }
 
 h2 {
@@ -35,21 +36,16 @@ h2,
 }
 
 #searchResults {
-    list-style:none;
-    margin-left:0px;
-    padding:0px;
-    color:black;
+    list-style: none;
+    margin-left: 0px;
+    padding: 0px;
+    color: black;
     font-weight: bolder;
 }
 
-#day1, 
-#day2,
-#day3,
-#day4,
-#day5 {
+#five-day-forecast {
     margin: 10px 5px 0px 0px;
-    color:black;
-    text-align: center;
+    color: black;
 }
 
 img {
@@ -57,11 +53,13 @@ img {
     border-radius: 15%;
 }
 
-@media only screen and (max-width: 1200px){
-    .item-2 > img {
-        width:50%;
+@media only screen and (max-width: 1200px) {
+
+    .item-2>img {
+        width: 35px;
     }
-    #five-day-forecast {
-        font-size:7px;
+
+    #five-day-forecast>div {
+        margin-bottom: 10px;
     }
 }
