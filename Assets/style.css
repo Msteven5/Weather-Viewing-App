@@ -54,3 +54,12 @@ img {
     background-color: lightblue;
     border-radius: 15%;
 }
+
+@media only screen and (max-width: 1200px){
+    .item-2 > img {
+        width:50%;
+    }
+    #five-day-forecast {
+        font-size:7px;
+    }
+}
