@@ -68,9 +68,9 @@ function searchCity(currentCity) {
                 dateArray[i].textContent = 'Date: ' + formattedDate;
                 iconArray[i].innerHTML = '';
                 iconArray[i].appendChild(iconImage);
-                tempArray[i].textContent = 'Temperature: ' + main.temp;
-                windArray[i].textContent = 'Wind speed: ' + wind.speed;
-                humidArray[i].textContent = 'Humidity: ' + main.humidity;
+                tempArray[i].textContent = 'Temperature: ' + main.temp + ' °F';
+                windArray[i].textContent = 'Wind speed: ' + wind.speed + ' MPH';
+                humidArray[i].textContent = 'Humidity: ' + main.humidity + ' %';
             }
 
             const savedCities = JSON.parse(localStorage.getItem('savedCities')) || [];
@@ -116,9 +116,9 @@ function currentDisplay(currentCity) {
             nameOnScreen.textContent = 'Currently: ' + data.name;
             $('.currentItem-1').text(currentDate);
             $('.currentItem-2').append(iconImage);
-            $('.currentItem-3').text('Temperature: ' + data.main.temp)
-            $('.currentItem-4').text('Wind speed: ' + data.wind.speed)
-            $('.currentItem-5').text('Humidity: ' + data.main.humidity)
+            $('.currentItem-3').text('Temperature:  ' + data.main.temp + ' °F')
+            $('.currentItem-4').text('Wind speed:  ' + data.wind.speed + ' MPH')
+            $('.currentItem-5').text('Humidity:  ' + data.main.humidity + ' %')
         })
 }
 
