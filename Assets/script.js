@@ -21,7 +21,7 @@ function loadSaves() {
 
     if (savedOnScreen) {
         for (let i = 0; i < savedOnScreen.length; i++) {
-            const buttonOnScreen = $("<button>").text(savedOnScreen[i]).addClass("rounded-3 m-1 w-100 bg-light p-2searchList");
+            const buttonOnScreen = $("<button>").text(savedOnScreen[i]).addClass("rounded-3 m-1 w-100 bg-light mt-1 searchList");
             $('#searchResults').append(buttonOnScreen);
         }
     }
@@ -42,7 +42,7 @@ function showLast() {
 }
 
 function searchCity(currentCity) {
-    let url = 'https://api.openweathermap.org/data/2.5/forecast?q=' + currentCity + '&units=imperial&appid=99ada079775ccf12a3014f095b1d2b79';
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${currentCity}&units=imperial&appid=99ada079775ccf12a3014f095b1d2b79`;
 
     fetch(url)
         .then(function (response) {
